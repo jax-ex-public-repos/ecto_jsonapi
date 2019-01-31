@@ -26,7 +26,9 @@ defmodule EctoJsonapi.MixProject do
   defp deps do
     [
       {:ecto, "~> 3.0"},
-      {:jason, "~> 1.1", only: :test}
+      {:jason, "~> 1.1", only: :test},
+      {:benchee, "~> 0.13", only: :dev},
+      {:recase, "~> 0.4"}
     ]
   end
 end
